@@ -8,20 +8,13 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		// ←矢印が押されたとき
-		if (Input.GetKeyDown(KeyCode.LeftArrow))
-		{
-			transform.Translate(-3, 0, 0); //←に3動かす
-		}
 
-		// →矢印が押されたとき
-		if (Input.GetKeyDown(KeyCode.RightArrow))
-		{
-			transform.Translate(3, 0, 0); //→に3動かす
-		}
-		
+	public void LButtonDown()
+	{
+		transform.Translate(-3, 0, 0);
+	}
+	public void RButtonDown()
+	{
+		transform.Translate(3, 0, 0,);
 	}
 }
