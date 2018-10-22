@@ -15,6 +15,6 @@ public class PlayerController : MonoBehaviour {
 	}
 	public void RButtonDown()
 	{
-		transform.Translate(3, 0, 0,);
+		transform.Translate(3, 0, 0);
 	}
 }
